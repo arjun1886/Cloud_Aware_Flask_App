@@ -29,21 +29,14 @@ def fault_tolerance():
                url = URL+str(l[i])+'/api/v1/_health'
                try:
                    r= requests.get(url = url)
-                   #print(l1[i])
+
                    if r.status_code==500:
-                  #print(l1[i])
-                  #l1[i].restart()
+
                       l1[i].kill()
-                 #del l1[i]
-                  #for a in c:
-                  #    if(a==l1[i]):
                       print(l1[i])
 
-                      #b=restart_cont(l[i])
                       b=c.containers.run('123456arjun/acts:latest' , ports = {'80/tcp': ('0.0.0.0' , l[i]) } , privileged=False, detach=True)
-                 #if(len(l)==0):
-                 #  l1.append(b)
-                 #else:
+
                       l1[i]=b
                       print(b)
                except:
@@ -302,12 +295,7 @@ def scale():
                    else:
                        pass                   
           count=0
-          #time.sleep(120)
-          #count=0
-#response = app.response_class(response=json.dumps({obj}), status=response.status_code, mimetype='application/json')
-#return response
-#c = docker.from_env()
-#b1=c.containers.run('123456arjun/acts:latest' , ports = {'80/tcp': ('0.0.0.0' , 8000) } , privileged=False, detach=True)
+
 
 
 
