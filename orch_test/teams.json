@@ -1,0 +1,8 @@
+{
+    "CC_140_141_153_213": {
+        "selfieless_ip": "cclb-235755711.us-east-1.elb.amazonaws.com",
+        "acts_ip": "52.21.133.199",
+        "acts_username": "ubuntu",
+        "acts_private_key": "acts.pem"
+    }
+}
