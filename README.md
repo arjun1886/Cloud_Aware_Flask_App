@@ -1,6 +1,6 @@
 # Cloud_Aware_Flask_App
 
-This is the backend for a cloud based application, which enables people upload to samaritan acts.
+This is the backend for a cloud based application, which enables people to upload samaritan acts.
 
 The application consists of two containers which are REST Api services- 
 
